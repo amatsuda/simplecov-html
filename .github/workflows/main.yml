@@ -19,6 +19,10 @@ jobs:
           - jruby
           - jruby-head
 
+    env:
+      BUNDLE_WITHOUT: development
+      BUNDLE_WITH: test
+
     steps:
       - uses: actions/checkout@v3
 
